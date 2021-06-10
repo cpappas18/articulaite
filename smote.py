@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-
+"""
 ## Synthetic Minority Oversampling Technique (SMOTE)
-This script demonstrates how to transform an imbalanced dataset (used for binary classification) into a balanced dataset by oversampling from the minority class.
+This script demonstrates how to transform an imbalanced dataset (used for binary classification)
+into a balanced dataset by oversampling from the minority class.
 
 Reference: 
 https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
