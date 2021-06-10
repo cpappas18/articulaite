@@ -71,6 +71,7 @@ def smote_multiclass_encoded(df):
   if counter[0] == counter[1] and counter[1] == counter[2] and counter[2] == counter[3]:
     count = counter[0]
   else:
+    count = 0
     print("Oversampling failed")
 
   # regenerate dataframe with new samples
