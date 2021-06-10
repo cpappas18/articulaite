@@ -10,9 +10,10 @@ https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classificat
 
 import pandas as pd
 import numpy as np
-from random import random
 from collections import Counter
 from imblearn.over_sampling import SMOTE
+from numpy import where, random
+
 
 """
 Performs SMOTE on a dataframe with binary labels.
