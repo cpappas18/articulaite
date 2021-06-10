@@ -35,6 +35,7 @@ def smote_binary(df):
   if counter[0] == counter[1]: 
     count = counter[0]
   else:
+    count = 0
     print("Oversampling failed")
 
   # regenerate dataframe with new samples
