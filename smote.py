@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Reference: 
-https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
-"""
 
 import pandas as pd
 import numpy as np
@@ -16,10 +12,12 @@ def smote_binary(df, num_samples_dict=None):
   Performs data augmentation and/or downsampling on a dataframe with binary classes.
   The SMOTE algorithm is used for augmentation and random sampling is used for downsampling of the specified classes.
 
-  Keyword arguments:
-  df -- the dataframe to manipulate
-  num_samples_dict -- a dictionary of the form {0: num_desired_samples, 1: num_desired_samples} that indicates the
+  Args:
+    df: the dataframe to manipulate
+    num_samples_dict: a dictionary of the form {0: num_desired_samples, 1: num_desired_samples} that indicates the
                       number of samples that the returned dataframe should have in each class
+
+  Returns: the augmented and/or downsampled dataframe
   """
 
   if df.columns[[0]] == 'Unnamed: 0':
@@ -77,11 +75,13 @@ def smote_multiclass(df, num_samples_dict=None, one_hot_encoded=False):
   Supports both numerical and one-hot encoded class values.
   The SMOTE algorithm is used for augmentation and random sampling is used for downsampling of the specified classes.
 
-  Keyword arguments:
-  df -- the dataframe to manipulate
-  num_samples_dict -- a dictionary of the form {0: num_desired_samples, 1: num_desired_samples, ...} that indicates the
+  Args:
+    df: the dataframe to manipulate
+    num_samples_dict: a dictionary of the form {0: num_desired_samples, 1: num_desired_samples, ...} that indicates the
                       number of samples that the returned dataframe should have in each class
-  one_hot_encoded -- Boolean value indicating if the dataframe is one-hot encoded
+    one_hot_encoded: Boolean value indicating if the dataframe is one-hot encoded
+
+  Returns: the augmented and/or downsampled dataframe
   """
 
   if df.columns[[0]] == 'Unnamed: 0':
