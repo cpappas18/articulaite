@@ -2,7 +2,11 @@
   <img width="550" src="https://user-images.githubusercontent.com/49031258/122465135-b89f9c00-cf85-11eb-9e3b-b123e2dcae44.jpg">
 </p>
 
-As part of the AI4Good Lab 3-week project creation, we decided to build a tool to diagnose motor speech disorders (dysarthrias) caused by conditions such as Parkinson’s and ALS from user audio input. Refer to `notebook.ipynb` for an in-depth review of the project.
+Dysarthria is a motor speech disorder that arises from weakness or paralysis of muscles in the face, lips, tongue, and throat. It is caused by neurological damage and is often one of the first symptoms of numerous common neurological disorders. For instance, Dysarthria affects 70-100% of people with Parkinson’s disease, 30% of people with ALS (Lou Gehrig's disease), and 20% of people with Cerebral Palsy. 
+
+Diagnosis of these disorders require MRI and CT scans, blood and urine tests, and EEG or electromyography tests. These tests are very expensive and may be inaccessible for some patients. For our final project at the AI4Good Lab, we decided to build a machine learning tool that is capable of detecting a patient's underlying cause of Dysarthria by classifying audio input as being indicative of Parkinson's disease, ALS, or Cerebral Palsy. The best part is that this tool is free and accessible for all!
+
+Refer to `notebook.ipynb` for an in-depth review of the data collection, data visualization, and machine learning model.
 
 # Command Line Usage
 To classify your own audio files from the command line, please follow these instructions.  
