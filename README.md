@@ -1,5 +1,16 @@
-# Goal 
+<p align="center">
+  <img width="550" src="https://user-images.githubusercontent.com/49031258/122465135-b89f9c00-cf85-11eb-9e3b-b123e2dcae44.jpg">
+</p>
+
 As part of the AI4Good Lab 3-week project creation, we decided to build a tool to diagnose motor speech disorders (dysarthrias) caused by conditions such as Parkinson’s and ALS from user audio input. Refer to `notebook.ipynb` for an in-depth review of the project.
+
+# Command Line Usage
+To classify your own audio files from the command line, please follow these instructions.  
+1. Record yourself sustaining the /a/ vowel sound for 5 seconds. 
+2. Convert the audio file to .wav format.
+3. Download this repository and navigate into it from the command line using ```cd```.
+4. On the command line, type the command ``` python3 main.py -i <path_to_audio_file> ```
+5. For a reminder of the usage, you can type ``` python3 main.py -h ```
 
 # File explorer
 ` ` ` feature_extraction.ipynb ` ` ` 
