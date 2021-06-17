@@ -65,8 +65,20 @@ def main(argv):
         if input_features[i] is None:
             input_features[i] = 0
 
+    feature_means = [0.335300, 0.005682, 0.000041, 0.003049, 0.008125, 0.037442, 0.340817, 0.019002, 0.022342, 0.030332, 0.655004]
+    feature_std_dev = [0.472128, 0.057122, 0.056844, 0.056964, 0.057615, 0.064179, 0.271675, 0.058891, 0.059949, 0.061402, 0.102698]
+
+    # standardize features
+    for i in range(len(input_features)):
+        if i>0: # do not standardize gender
+            feature = input_features[i]
+            std_feature = (feature-feature_means[i])/feature_std_dev[i]
+            input_features[i] = std_feature
+
     # predict class
-    model = pickle.load(open('random_forest_final_model.sav', 'rb'))
+    with open('random_forest_final_model.sav', 'rb') as f:
+        model = pickle.load(f)
+
     input_features = np.array(input_features)
     prediction = model.predict(input_features.reshape(1, -1)).item()
 
