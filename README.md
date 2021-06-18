@@ -6,10 +6,17 @@ Dysarthria is a motor speech disorder that arises from weakness or paralysis of 
 
 Diagnosis of these disorders require MRI and CT scans, blood and urine tests, and EEG or electromyography tests. These tests are very expensive and may be inaccessible for some people. For our final project at the AI4Good Lab, we decided to build a machine learning tool that is capable of detecting a patient's underlying cause of dysarthria by classifying audio input as being indicative of Parkinson's disease, ALS, or cerebral palsy. The best part is that this tool is free and accessible to all!
 
-Refer to `project_journal.ipynb` for an in-depth review of the data collection, data visualization, and machine learning model.
+Refer to [`project_journal.ipynb`](https://github.com/cpappas18/articulaite/blob/main/project_journal.ipynb) for an in-depth review of the data collection, data visualization, and machine learning model.
 
-# Command Line Usage
-To classify your own audio files from the command line, please follow these instructions.  
+# Table of contents
+1. [How to use](https://github.com/cpappas18/Articulaite#command-line-usage)
+2. [File description](https://github.com/cpappas18/Articulaite#file-description)
+3. [The team](https://github.com/cpappas18/Articulaite#the-team)
+4. [Acknowledgements](https://github.com/cpappas18/Articulaite#acknowledgements)
+5. [References](https://github.com/cpappas18/Articulaite#references)
+
+# How to use
+To classify your own audio files from the command line, please follow these instructions :  
 1. Record yourself sustaining the /a/ vowel sound for 5 seconds. 
 2. Convert the audio file to .wav format.
 3. Download this repository and navigate into it from the command line using ```cd```
@@ -17,7 +24,7 @@ To classify your own audio files from the command line, please follow these inst
 5. To classify your audio file, type the command ``` python3 main.py -i <path_to_audio_file> ```
 6. For a reminder of the usage, you can type ``` python3 main.py -h ```
 
-# File explorer
+# File description
 ``` classifiers/ ```
 
 A directory containing all of the machine learning models that we tried for this task. This includes decision tree, multi-layer perceptron, random forest, SVM, and logistic regression models.
@@ -50,7 +57,7 @@ The trained model we ended up using for our classification.
 
 Contains two functions, `smote_binary` and `smote_multiclass`, that oversample and/or undersample binary class and multiclass dataframes using the SMOTE technique.
 
-# Team
+# The team
 Chloe Pappas, <chloeoliviapappas@gmail.com>  
 Hala Hassan, <halahassan13@gmail.com>  
 Nadia Enhaili, <nadia.enhaili@gmail.com>  
