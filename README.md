@@ -17,22 +17,41 @@ To classify your own audio files from the command line, please follow these inst
 5. For a reminder of the usage, you can type ``` python3 main.py -h ```
 
 # File explorer
-` ` ` feature_extraction.ipynb ` ` ` 
+``` /classifiers```
 
-Contains the code for extracting sound features relevant to dysarthria diagnosis from audio files.
+A directory containing all of the machine learning models that we tried for this task. This includes decision tree, multi-layer perceptron, random forest, SVM, and logistic regression models.
 
- ` ` ` smote.py ` ` `
+``` /data ```
 
-Contains two functions, `smote_binary` and `smote_multiclass`, that oversample or undersample a dataframe using the SMOTE technique and one-hot encode it.
+A directory containing data visualization, including box plots, histograms, and heat maps.
+
+``` audio_features_visualization.ipynb ```
+
+Contains code that retrieves audio input from the user and performs visualization of this input, such as plotting spectrograms and intensity graphs. 
+
+` ` ` feature_extraction.py ` ` ` 
+
+Contains code for extracting sound features relevant to Dysarthria diagnosis from a .wav audio file.
+
+``` main.py ```
+
+Main function for taking audio input from the command-line and predicting a class of Parkinson's, ALS, Cerebral Palsy, or healthy.
+
+``` notebook.ipynb ```
+
+Contains a summary of our data collection, preprocessing, augmentation, model development, and model selection process.
 
 ` ` ` performance_report.py ` ` `
 
 Contains an eponymous function that generates a CSV file with various performance metrics and graphs for easy comparison of models.
 
-` ` ` logistic_regression.py ` ` `
+``` random_forest_final_model.sav ```
 
-Contains a function that fits a logistic regression model for each of the specified n classes (default is 1) and returns the necessary parameters for `performance_report`.
+Our trained machine learning model. 
 
+ ` ` ` smote.py ` ` `
+
+Contains two functions, `smote_binary` and `smote_multiclass`, that oversample and/or undersample binary class and multiclass dataframes using the SMOTE technique.
 
 # Team
 Chloe Pappas, <chloeoliviapappas@gmail.com>  
@@ -43,9 +62,9 @@ Jiayue Yang, <jiayue.yang@mail.mcgill.ca>
 Kamun Karl Itaj, <kamun.karl-itaj@hotmail.ca>  
 
 # Acknowledgements
-Special thanks to our TA, Nadia Blostein, for her invaluable guidance and clever insights throughout the program !  
-Thank you to our team mentors Ainaz, Disha and Isabelle for sharing their expertise and weekly consulting meetings !  
-Thank you to the AI4Good Lab team for creating this opportunity in the first place !
+We are very thankful for our TA, Nadia Blostein, for her invaluable guidance and clever insights throughout the program.  
+Thank you to our team mentors Ainaz, Disha, and Isabelle for sharing their expertise and meeting with us for weekly consultations.
+Finally, thank you to the AI4Good Lab for creating this opportunity and providing us with the education and materials necessary to develop this project!
 
 # References
 [SMOTE technique](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/)
