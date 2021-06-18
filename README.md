@@ -2,9 +2,9 @@
   <img width="550" src="https://user-images.githubusercontent.com/49031258/122465135-b89f9c00-cf85-11eb-9e3b-b123e2dcae44.jpg">
 </p>
 
-Dysarthria is a motor speech disorder that arises from weakness or paralysis of muscles in the face, lips, tongue, and throat. It is caused by neurological damage and is often one of the first symptoms of numerous common neurological disorders. For instance, Dysarthria affects 70-100% of people with Parkinson’s disease, 30% of people with ALS (Lou Gehrig's disease), and 20% of people with Cerebral Palsy. 
+Dysarthria is a motor speech disorder that arises from weakness or paralysis of muscles in the face, lips, tongue, and throat. It is caused by neurological damage and is often one of the first symptoms of numerous common neurological disorders. Dysarthria affects 70 - 100% of people with Parkinson’s disease, 30% of people with ALS (Lou Gehrig's disease), and 20% of people with cerebral palsy. 
 
-Diagnosis of these disorders require MRI and CT scans, blood and urine tests, and EEG or electromyography tests. These tests are very expensive and may be inaccessible for some patients. For our final project at the AI4Good Lab, we decided to build a machine learning tool that is capable of detecting a patient's underlying cause of Dysarthria by classifying audio input as being indicative of Parkinson's disease, ALS, or Cerebral Palsy. The best part is that this tool is free and accessible for all!
+Diagnosis of these disorders require MRI and CT scans, blood and urine tests, and EEG or electromyography tests. These tests are very expensive and may be inaccessible for some people. For our final project at the AI4Good Lab, we decided to build a machine learning tool that is capable of detecting a patient's underlying cause of dysarthria by classifying audio input as being indicative of Parkinson's disease, ALS, or cerebral palsy. The best part is that this tool is free and accessible to all!
 
 Refer to `project_journal.ipynb` for an in-depth review of the data collection, data visualization, and machine learning model.
 
@@ -21,10 +21,6 @@ To classify your own audio files from the command line, please follow these inst
 ``` classifiers/ ```
 
 A directory containing all of the machine learning models that we tried for this task. This includes decision tree, multi-layer perceptron, random forest, SVM, and logistic regression models.
-
-``` data/ ```
-
-A directory containing data visualization, including box plots, histograms, and heat maps.
 
 ``` audio_features_visualization.ipynb ```
 
@@ -44,11 +40,11 @@ Contains a summary of our data collection, preprocessing, augmentation, model de
 
 ``` performance_report.py ```
 
-Contains an eponymous function that generates a CSV file with various performance metrics and graphs for easy comparison of models.
+Contains a function that generates a CSV file with various performance metrics and graphs for easy comparison of machine learning models.
 
 ``` random_forest_final_model.sav ```
 
-Our trained machine learning model. 
+The trained model we ended up using for our classification.
 
 ``` smote.py ```
 
