@@ -14,7 +14,7 @@ def extract_features(sound_wav_file):
     Extracts audio features from a .wav file
 
     Args:
-        sound_wav_file: audio file to extract features from
+        sound_wav_file: audio file in .wav format to extract features from 
 
     Returns: dictionary of extracted audio features in the format {local shimmer, local dB shimmer, apq3 shimmer, apq5 shimmer, 
              apq11 shimmer, RAP, PPQ5, DDP, local jitter, local absolute jitter, HNR, DFA, fundamental mean frequency}
