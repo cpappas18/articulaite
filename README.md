@@ -13,8 +13,9 @@ To classify your own audio files from the command line, please follow these inst
 1. Record yourself sustaining the /a/ vowel sound for 5 seconds. 
 2. Convert the audio file to .wav format.
 3. Download this repository and navigate into it from the command line using ```cd```.
-4. On the command line, type the command ``` python3 main.py -i <path_to_audio_file> ```
-5. For a reminder of the usage, you can type ``` python3 main.py -h ```
+4. To install the necessary packages, type ```pip install -r requirements.txt```
+5. To classify your audio file, type the command ``` python3 main.py -i <path_to_audio_file> ```
+6. For a reminder of the usage, you can type ``` python3 main.py -h ```
 
 # File explorer
 ``` classifiers/ ```
