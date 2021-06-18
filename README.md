@@ -9,7 +9,7 @@ Diagnosis of these disorders require MRI and CT scans, blood and urine tests, an
 Refer to [`project_journal.ipynb`](https://github.com/cpappas18/articulaite/blob/main/project_journal.ipynb) for an in-depth review of the data collection, data visualization, and machine learning model.
 
 # Table of contents
-1. [How to use](https://github.com/cpappas18/Articulaite#command-line-usage)
+1. [How to use](https://github.com/cpappas18/Articulaite#how-to-use)
 2. [File description](https://github.com/cpappas18/Articulaite#file-description)
 3. [The team](https://github.com/cpappas18/Articulaite#the-team)
 4. [Acknowledgements](https://github.com/cpappas18/Articulaite#acknowledgements)
