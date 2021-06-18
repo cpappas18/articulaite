@@ -1,0 +1,9 @@
+matplotlib==3.3.4
+numpy==1.20.1
+pandas==1.2.4
+imblearn==0.0
+librosa==0.8.1
+scikit_learn==0.24.2
+secrets==1.0.2
+Signal_Analysis==0.1.26
+surfboard==0.2.0
