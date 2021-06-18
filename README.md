@@ -17,11 +17,11 @@ To classify your own audio files from the command line, please follow these inst
 5. For a reminder of the usage, you can type ``` python3 main.py -h ```
 
 # File explorer
-``` /classifiers ```
+``` classifiers/ ```
 
 A directory containing all of the machine learning models that we tried for this task. This includes decision tree, multi-layer perceptron, random forest, SVM, and logistic regression models.
 
-``` /data ```
+``` data/ ```
 
 A directory containing data visualization, including box plots, histograms, and heat maps.
 
