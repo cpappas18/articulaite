@@ -16,7 +16,7 @@ Refer to [`project_journal.ipynb`](https://github.com/cpappas18/articulaite/blob
 5. [References](https://github.com/cpappas18/articulaite#references)
 
 # How to use
-To classify your own audio files from the command line, please follow these instructions :  
+To classify your own audio files from the command line, please follow these instructions:  
 1. Record yourself sustaining the /a/ vowel sound for 5 seconds. 
 2. Convert the audio file to .wav format.
 3. Download this repository and navigate into it from the command line using ```cd```
